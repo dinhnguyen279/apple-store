@@ -12,11 +12,7 @@ const ProductsChild = () => {
       <div className="grid grid-col-1 md:grid-cols-2 p-0 space-x-0 md:p-5 md:space-x-5 gap-4">
         {dataProducts2.map((val, idx) => {
           return (
-            <a
-              href="/"
-              className="hover:scale-95 transition-transform "
-              key={idx + 1}
-            >
+            <div className="hover:scale-95 transition-transform " key={idx + 1}>
               <div className="relative">
                 <div className="absolute top-[1%] left-[50%] -translate-x-[50%] text-center text-black">
                   <h1 className="text-6xl font-semibold">{val.title}</h1>
@@ -36,15 +32,14 @@ const ProductsChild = () => {
                   />
                 </div>
               </div>
-            </a>
+            </div>
           );
         })}
       </div>
       <div className="grid grid-col-1 md:grid-cols-2 p-0 space-x-0 md:p-5 md:space-x-5 gap-4">
         {dataProducts1.map((val, idx) => {
           return (
-            <a
-              href="/"
+            <div
               className="cursor-pointer hover:scale-95 transition-transform"
               key={idx + 1}
             >
@@ -67,7 +62,7 @@ const ProductsChild = () => {
                   />
                 </div>
               </div>
-            </a>
+            </div>
           );
         })}
       </div>

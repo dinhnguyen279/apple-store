@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="bg-[#323232] text-zinc-300 py-2 text-xs">
       <div className="flex justify-center items-center gap-10 container mx-auto">
-        <button className=" lg:hidden flex justify-start ">
+        <button className=" lg:hidden flex justify-start">
           <FontAwesomeIcon icon={faBars} />
         </button>
         <div className=" lg:m-0 m-auto">
