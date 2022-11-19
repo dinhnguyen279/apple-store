@@ -132,7 +132,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               Services
             </h1>
             <ul className="space-y-2 mb-3 lg:block hidden">
@@ -192,7 +192,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               Account
             </h1>
             <ul className="space-y-2 lg:block hidden">
@@ -219,7 +219,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               Apple Store
             </h1>
             <ul className="space-y-2 lg:block hidden">
@@ -281,7 +281,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               For Business
             </h1>
             <ul className="space-y-2 mb-3 lg:block hidden">
@@ -301,7 +301,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               For Education
             </h1>
             <ul className="space-y-2 mb-3 lg:block hidden">
@@ -326,7 +326,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               For Healthcare
             </h1>
             <ul className="space-y-2 mb-3 lg:block hidden">
@@ -351,7 +351,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px]  border-b-2 lg:border-b-0 border-b-zinc-400 ">
+            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400 ">
               For Government
             </h1>
             <ul className="space-y-2 lg:block hidden">

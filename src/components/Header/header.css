@@ -21,7 +21,7 @@
     width: full;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
     transition: 1s;
