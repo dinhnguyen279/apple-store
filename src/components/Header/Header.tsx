@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-black text-zinc-300 py-2 text-xs ">
+    <div className="bg-black text-zinc-300 py-2 text-xs fixed w-full opacity-80 z-50 outline-none border-none">
       <div className="flex justify-center items-center gap-10 container mx-auto nav-main">
         <button
           className="lg:hidden flex justify-start btn-bar"

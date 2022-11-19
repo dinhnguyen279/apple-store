@@ -27,7 +27,7 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-1/2 transition-transform"
+        className="mySwiper w-1/2 transition-transform space-y-5"
       >
         <SwiperSlide>
           <img src={slider1} alt="slider" />
