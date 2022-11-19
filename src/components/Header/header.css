@@ -1,0 +1,41 @@
+/* Respondive  */
+
+.btn-bar {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .btn-bar {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-main ul {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: full;
+    width: full;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-110vh);
+    z-index: 100;
+    background: #323232;
+    color: white;
+    padding: 20px 0 20px 30px;
+  }
+
+  .nav-main .responsive-nav {
+    transform: none;
+  }
+  .header {
+    background: #000;
+  }
+}
