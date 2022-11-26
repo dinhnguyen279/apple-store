@@ -15,10 +15,14 @@ const ProductsChild = () => {
             <div className="hover:scale-95 transition-transform" key={idx + 1}>
               <div className="relative">
                 <div className="absolute top-[1%] left-[50%] -translate-x-[50%] text-center text-black">
-                  <h1 className="text-6xl font-semibold">{val.title}</h1>
-                  <h2 className="text-red-700 ">{val.underTitle}</h2>
-                  <p className="text-xl font-normal ">{val.content}</p>
-                  <div className="space-x-10 text-blue-600 text-xl font-normal">
+                  <h1 className="lg:text-6xl text-lg font-semibold">
+                    {val.title}
+                  </h1>
+                  <h2 className="text-red-700">{val.underTitle}</h2>
+                  <p className="text-xl font-normal hidden lg:block">
+                    {val.content}
+                  </p>
+                  <div className="space-x-10 text-blue-600 text-xl font-normal hidden lg:block">
                     <a href="/" className="hover:underline">
                       {val.urlBuy} {""} {val.urlmore}
                     </a>
@@ -45,10 +49,14 @@ const ProductsChild = () => {
             >
               <div className="relative">
                 <div className="absolute top-[1%] left-[50%] -translate-x-[50%] text-center text-white">
-                  <h1 className="text-6xl font-semibold ">{val.title}</h1>
+                  <h1 className="lg:text-6xl text-lg font-semibold">
+                    {val.title}
+                  </h1>
                   <h2 className="text-red-700 ">{val.underTitle}</h2>
-                  <p className="text-xl font-normal ">{val.content}</p>
-                  <div className="space-x-10 text-blue-600 text-xl font-normal">
+                  <p className="text-xl font-normal hidden lg:block">
+                    {val.content}
+                  </p>
+                  <div className="space-x-10 text-blue-600 text-xl font-normal hidden lg:block">
                     <a href="/" className="hover:underline">
                       {val.urlBuy} {""} {val.urlmore}
                     </a>

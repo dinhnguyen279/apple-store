@@ -19,23 +19,18 @@ const Header = () => {
 
   return (
     <div className="bg-black text-zinc-300 py-2 text-xs fixed w-full opacity-80 z-50 outline-none border-none">
-      <div className="flex justify-center items-center gap-10 container mx-auto nav-main">
-        <button
-          className="lg:hidden flex justify-start btn-bar"
-          onClick={showNav}
-        >
+      <div className="flex justify-between lg:justify-center items-center gap-10 container mx-auto px-4 nav-main">
+        <button className="lg:hidden flex btn-bar" onClick={showNav}>
           {show ? (
             <FontAwesomeIcon icon={faBars} />
           ) : (
             <FontAwesomeIcon icon={faRefresh} />
           )}
         </button>
-        <div className=" lg:m-0 m-auto">
-          <img src={logo} alt="logo" className="h-6 w-6" />
-        </div>
-        <div className="">
+        <div className="flex gap-x-10">
+          <img src={logo} alt="logo" className="h-5 w-5" />
           <ul
-            className="flex  justify-evenly items-center gap-10 w-full "
+            className="flex justify-evenly items-center gap-10 w-full"
             ref={navRef}
           >
             <li>

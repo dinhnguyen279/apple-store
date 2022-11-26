@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f5f5f7] text-zinc-500 py-2 text-xs">
+    <div className="bg-[#f5f5f7] text-zinc-500 py-2 text-xs w-full">
       <div className="container mx-auto space-y-4 w-4/6">
         <p>
           1. Cung cấp hợp lệ về các giao dịch mua đủ điều kiện của các sản phẩm
@@ -69,7 +69,7 @@ const Footer = () => {
               border={true}
               className=" float-right lg:hidden block relative text-zinc-400"
             />
-            <h1 className="text-base font-medium text-zinc-400 lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400">
+            <h1 className="text-base font-medium lg:text-black border-b-[1px] lg:border-b-0 border-b-zinc-400">
               Shop and Learn
             </h1>
             <ul className="space-y-2 lg:block hidden">
@@ -457,10 +457,10 @@ const Footer = () => {
         </div>
         <hr className="border-zinc-400 lg:block hidden" />
         <div className="w-full">
-          <div className="relative float-right">
+          <div className="float-right">
             <a href="/">United States</a>
           </div>
-          <div className="flex space-x-6">
+          <div className="flex lg:flex-row flex-col space-x-6">
             <div>Copyright &copy; {new Date().getFullYear()} DinhNguyenTN.</div>
             <div>
               <ul className="flex flex-wrap">
