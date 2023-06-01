@@ -2,12 +2,12 @@
 
 .btn-bar {
   cursor: pointer;
-  background: transparent;
   border: none;
   outline: none;
   visibility: hidden;
   opacity: 0;
 }
+
 @media only screen and (max-width: 1024px) {
   .btn-bar {
     visibility: visible;
@@ -18,7 +18,6 @@
     top: 100%;
     left: 0;
     height: full;
-    width: full;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

@@ -9,8 +9,8 @@ import Season from "../../../assets/images/end-section.jpg";
 const ProductsChild = () => {
   return (
     <div className="space-y-4">
-      <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4">
-        {dataProducts2.map((val, idx) => {
+      <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4 animate__animated animate__bounceInUp animate__delay-1s">
+        {dataProducts1.map((val, idx) => {
           return (
             <div className="hover:scale-95 transition-transform" key={idx + 1}>
               <div className="relative">
@@ -40,8 +40,8 @@ const ProductsChild = () => {
           );
         })}
       </div>
-      <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4">
-        {dataProducts1.map((val, idx) => {
+      <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4 animate__animated animate__bounceInUp animate__delay-1s">
+        {dataProducts2.map((val, idx) => {
           return (
             <div
               className="cursor-pointer hover:scale-95 transition-transform"
@@ -80,28 +80,7 @@ const ProductsChild = () => {
 
 export default ProductsChild;
 
-export const dataProducts1 = [
-  {
-    id: 1,
-    images: iPhone14Pro,
-    title: "iPhone 14 Pro",
-    underTitle: "",
-    content: "Pro. Beyond",
-    urlmore: "Learn more >",
-    urlBuy: "Buy",
-  },
-  {
-    id: 2,
-    images: Watch,
-    title: "WATCH",
-    underTitle: "SERIES 8",
-    content: "A healthy leap ahead",
-    urlmore: "Learn more >",
-    urlBuy: "Buy",
-  },
-];
-
-const dataProducts2 = [
+const dataProducts1 = [
   {
     id: 1,
     images: WatchBlack,
@@ -137,5 +116,26 @@ const dataProducts2 = [
     content: "AirPods",
     urlmore: "Shop >",
     urlBuy: "",
+  },
+];
+
+export const dataProducts2 = [
+  {
+    id: 1,
+    images: iPhone14Pro,
+    title: "iPhone 14 Pro",
+    underTitle: "",
+    content: "Pro. Beyond",
+    urlmore: "Learn more >",
+    urlBuy: "Buy",
+  },
+  {
+    id: 2,
+    images: Watch,
+    title: "WATCH",
+    underTitle: "SERIES 8",
+    content: "A healthy leap ahead",
+    urlmore: "Learn more >",
+    urlBuy: "Buy",
   },
 ];
