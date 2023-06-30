@@ -21,12 +21,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1.5rem;
     transition: 1s;
     transform: translateY(-110vh);
     z-index: 100;
-    background: #323232;
+    /* background: #323232; */
+    background: #000;
     color: white;
     padding: 20px 0 20px 30px;
   }
@@ -37,4 +38,18 @@
   .header {
     background: #000;
   }
+}
+.quantity-cart::before {
+  content: attr(data-order);
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: -20%;
+  right: -30%;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background: aliceblue;
+  color: #434344;
+  line-height: 1.4;
 }

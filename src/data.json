@@ -1,0 +1,414 @@
+{
+  "AppleStore": "DanielDev",
+  "logo": "https://www.freepnglogos.com/uploads/mac-cosmetic-png-logo/apple-mac-cosmetic-png-logo-8.png",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Store",
+      "items": [
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "Mua Sản Phẩm Mới Nhất"
+        },
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "Mac"
+        },
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "iPad"
+        },
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "iPhone"
+        },
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "Apple Watch"
+        },
+        {
+          "itemTitle": "Mua Hàng",
+          "itemName": "Phụ Kiện"
+        },
+        {
+          "itemTitle": "Liên Kết Nhanh",
+          "itemName": "Tình Trạng Đơn Hàng"
+        },
+        {
+          "itemTitle": "Liên Kết Nhanh",
+          "itemName": "Apple Trade In"
+        },
+        {
+          "itemTitle": "Liên Kết Nhanh",
+          "itemName": "Tài Chính"
+        },
+        {
+          "itemTitle": "Mua Tại Cửa Hàng Đặt Biệt",
+          "itemName": "Giáo Dục"
+        },
+        {
+          "itemTitle": "Mua Tại Cửa Hàng Đặt Biệt",
+          "itemName": "Doanh Nghiệp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mac",
+      "items": [
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "MacBook Air"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "MacBook Pro"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "iMac"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "Mac mini"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "Mac Studio"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "Mac Pro"
+        },
+        {
+          "itemTitle": "Khám Phá Mac",
+          "itemName": "Màn Hình"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Về Mac",
+          "itemName": "Tình Trạng Đơn Hàng"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Về Mac",
+          "itemName": "Apple Trade In"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Về Mac",
+          "itemName": "Tài Chính"
+        },
+        {
+          "itemTitle": "Mua Mac",
+          "itemName": "Giáo Dục"
+        },
+        {
+          "itemTitle": "Mua Mac",
+          "itemName": "Doanh Nghiệp"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "iPad",
+      "items": [
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "iPad Pro"
+        },
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "iPad Air"
+        },
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "iPad"
+        },
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "iPad mini"
+        },
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "Apple Pencil"
+        },
+        {
+          "itemTitle": "Khám Phá iPad",
+          "itemName": "Bàn Phím"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm Về iPad",
+          "itemName": "Phụ Kiện iPad"
+        },
+        {
+          "itemTitle": "Mua iPad",
+          "itemName": "Mua iPad"
+        },
+        {
+          "itemTitle": "Mua iPad",
+          "itemName": "Apple Trade In"
+        },
+        {
+          "itemTitle": "Mua iPad",
+          "itemName": "Tài Chính"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm Về iPad",
+          "itemName": "Hỗ Trợ iPad"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm Về iPad",
+          "itemName": "iPadOS 16"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm Về iPad",
+          "itemName": "iCloud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "iPhone",
+      "items": [
+        {
+          "itemTitle": "Khám Phá iPhone",
+          "itemName": "iPhone 14 Pro"
+        },
+        {
+          "itemTitle": "Khám Phá iPhone",
+          "itemName": "iPhone 14"
+        },
+        {
+          "itemTitle": "Khám Phá iPhone",
+          "itemName": "iPhone 13"
+        },
+        {
+          "itemTitle": "Khám Phá iPhone",
+          "itemName": "iPhone 12"
+        },
+        {
+          "itemTitle": "Khám Phá iPhone",
+          "itemName": "iPhone SE"
+        },
+        {
+          "itemTitle": "Tìm Hiểu iPhone",
+          "itemName": "Phụ Kiện iPhone"
+        },
+        {
+          "itemTitle": "Tìm Hiểu iPhone",
+          "itemName": "Mua iPhone"
+        },
+        {
+          "itemTitle": "Tìm Hiểu iPhone",
+          "itemName": "Apple Trade In"
+        },
+        {
+          "itemTitle": "Tìm Hiểu iPhone",
+          "itemName": "Hỗ Trợ iPhone"
+        },
+        {
+          "itemTitle": "Mua iPhone",
+          "itemName": "iOS 16"
+        },
+        {
+          "itemTitle": "Mua iPhone",
+          "itemName": "Quyền Riêng Tư Trên iPhone"
+        },
+        {
+          "itemTitle": "Mua iPhone",
+          "itemName": "Ví"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Watch",
+      "items": [
+        {
+          "itemTitle": "Khám Phá Watch",
+          "itemName": "Apple Watch Ultra"
+        },
+        {
+          "itemTitle": "Khám Phá Watch",
+          "itemName": "Apple Watch Series 8"
+        },
+        {
+          "itemTitle": "Khám Phá Watch",
+          "itemName": "Apple Watch SE"
+        },
+        {
+          "itemTitle": "Khám Phá Watch",
+          "itemName": "Apple Watch Nike"
+        },
+        {
+          "itemTitle": "Mua Watch",
+          "itemName": "Mua Apple Watch"
+        },
+        {
+          "itemTitle": "Mua Watch",
+          "itemName": "Apple Watch Studio"
+        },
+        {
+          "itemTitle": "Mua Watch",
+          "itemName": "Dây Đeo Apple Watch"
+        },
+        {
+          "itemTitle": "Mua Watch",
+          "itemName": "Apple Trade In"
+        },
+        {
+          "itemTitle": "Khám Phá Watch",
+          "itemName": "Tài Chính"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm về Watch",
+          "itemName": "Hỗ Trợ Watch"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm về Watch",
+          "itemName": "WatchOS 9"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "AirPods",
+      "items": [
+        {
+          "itemTitle": "Khám Phá AirPods",
+          "itemName": "AirPods (Thế Hệ Thứ 2)"
+        },
+        {
+          "itemTitle": "Khám Phá AirPods",
+          "itemName": "AirPods (Thế Hệ Thứ 3)"
+        },
+        {
+          "itemTitle": "Khám Phá AirPods",
+          "itemName": "AirPods Pro (Thế Hệ Thứ 2)"
+        },
+        {
+          "itemTitle": "Khám Phá AirPods",
+          "itemName": "AirPods Max"
+        },
+        {
+          "itemTitle": "Mua AirPods",
+          "itemName": "Mua AirPods"
+        },
+        {
+          "itemTitle": "Mua AirPods",
+          "itemName": "Phụ Kiện AirPods"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm về AirPods",
+          "itemName": "Hỗ Trợ AirPods"
+        },
+        {
+          "itemTitle": "Tìm Hiểu Thêm về AirPods",
+          "itemName": "Apple Music"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Accessories",
+      "items": [
+        {
+          "itemTitle": "Mua Phụ Kiện",
+          "itemName": "Mac"
+        },
+        {
+          "itemTitle": "Mua Phụ Kiện",
+          "itemName": "iMac"
+        },
+        {
+          "itemTitle": "Mua Phụ Kiện",
+          "itemName": "iPhone"
+        },
+        {
+          "itemTitle": "Mua Phụ Kiện",
+          "itemName": "Apple Watch"
+        },
+        {
+          "itemTitle": "Mua Phụ Kiện",
+          "itemName": "AirPods"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Mua AirPods"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Phụ Kiện AirPods"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Support",
+      "items": [
+        {
+          "itemTitle": "Khám Phá Hỗ Trợ",
+          "itemName": "iPhone"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "iMac"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Mac"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Apple Watch"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "AirPods"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Music"
+        },
+        {
+          "itemTitle": "Trợ Giúp",
+          "itemName": "Cộng Đồng"
+        },
+        {
+          "itemTitle": "Trợ Giúp",
+          "itemName": "iPhone"
+        },
+        {
+          "itemTitle": "Trợ Giúp",
+          "itemName": "Kiểm Tra Bảo Hành"
+        },
+        {
+          "itemTitle": "Trợ Giúp",
+          "itemName": "Kiểm Tra Bảo Hành"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Sửa Chữa"
+        },
+        {
+          "itemTitle": "Khám Phá Phụ Kiện",
+          "itemName": "Liên Hệ Chúng Tôi"
+        },
+        {
+          "itemTitle": "Chủ Đề Hữu Ích",
+          "itemName": "ID Apple & Mật Khẩu"
+        },
+        {
+          "itemTitle": "Chủ Đề Hữu Ích",
+          "itemName": "Thanh Toán & Gói Đăng Ký"
+        },
+        {
+          "itemTitle": "Chủ Đề Hữu Ích",
+          "itemName": "Tìm Kiếm"
+        },
+        {
+          "itemTitle": "Chủ Đề Hữu Ích",
+          "itemName": "Trợ Năng"
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,11 @@ const IPad = () => {
   return (
     <>
       <div className="flex lg:flex-row flex-col-reverse items-center justify-center cursor-pointer p-10 pt-16">
-        <div className="animate__animated animate__bounceInLeft animate__delay-0.5s">
+        <div className="animate__animated animate__bounceInLeft">
           <img src={iPad} alt="iPad" className="w-full object-cover" />
         </div>
-        <div className="animate__animated animate__bounceInRight animate__delay-0.5s">
+
+        <div className="animate__animated animate__bounceInRight">
           <div className="text-center">
             <h1 className="text-7xl font-semibold">iPad</h1>
             <p className="text-xl font-normal">Lovable. Drawable. Magical.</p>
