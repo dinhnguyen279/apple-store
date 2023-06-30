@@ -154,7 +154,7 @@ const Header: React.FC = () => {
             onMouseLeave={() => setSearch("")}
           >
             <div className="container mx-auto xl:px-80 px-14 flex-grow">
-              <div className="flex-col justify-center items-center text-xl">
+              <div className="flex justify-center items-center text-xl">
                 <FontAwesomeIcon icon={faSearch} className="text-xl" />
                 <input
                   autoFocus
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                   placeholder="Tìm kiếm sản phẩm"
                   onChange={(e) => onChangeSearch(e)}
                   value={valueSearch}
-                  className="py-4 pr-4 pl-2 focus:outline-none text-slate-200 bg-transparent"
+                  className="w-full py-4 pr-4 pl-2 focus:outline-none text-slate-200 bg-transparent"
                   id="input-search"
                 />
               </div>
