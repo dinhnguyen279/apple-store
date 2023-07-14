@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-[#f5f5f7] text-zinc-500 py-2 text-xs w-full">
-      <div className="container mx-auto space-y-4 w-4/6">
+      <div className="transform-default space-y-4">
         <p>
           1. Cung cấp hợp lệ về các giao dịch mua đủ điều kiện của các sản phẩm
           Apple đủ điều kiện từ ngày 25 tháng 11 năm 2022, đến ngày 28 tháng 11

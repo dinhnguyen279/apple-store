@@ -90,20 +90,22 @@ const Header: React.FC = () => {
               {data.categories !== undefined &&
                 data.categories.map((val, idx) => {
                   return (
-                    <li
-                      key={idx + 1}
-                      className={`cursor-pointer flex justify-between w-full`}
-                      onMouseMove={() => {
-                        setShowItem(val.name);
-                        setSearch("");
-                        setCartNavbar("");
-                      }}
-                    >
-                      <p>{val.name}</p>
-                      <span className="pr-5 lg:hidden block">
-                        <FontAwesomeIcon icon={faAngleRight} />
-                      </span>
-                    </li>
+                    <a href="/store" className="w-full">
+                      <li
+                        key={idx + 1}
+                        className={`cursor-pointer flex justify-between`}
+                        onMouseMove={() => {
+                          setShowItem(val.name);
+                          setSearch("");
+                          setCartNavbar("");
+                        }}
+                      >
+                        <p>{val.name}</p>
+                        <span className="pr-5 lg:hidden block">
+                          <FontAwesomeIcon icon={faAngleRight} />
+                        </span>
+                      </li>
+                    </a>
                   );
                 })}
             </ul>

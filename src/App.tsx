@@ -9,12 +9,13 @@ import Main from "./page/Main/Main";
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import Page404 from "./page/NotFound/page404";
-
+import Store from "./page/Store/Store";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Main />} />
+        <Route path="store" element={<Store />} />
         <Route path="*" element={<Page404 />} />
       </Route>
     )
