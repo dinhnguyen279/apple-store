@@ -1,9 +1,16 @@
-import React from "react";
 import "./page404.css";
 const page404 = () => {
   return (
-    <div className="mainpage h-[50vh] flex justify-center items-center">
+    <div className="mainpage flex justify-center items-center h-[100vh] overflow-hidden">
       <div className="container">
+        <div className="flex sm:justify-start justify-center">
+          <a
+            href="/"
+            className="px-5 py-3 bg-white rounded hover:bg-slate-400 hover:text-white transition-all ease-in-out"
+          >
+            Trở về trang chủ
+          </a>
+        </div>
         <div className="row">
           <div className="col-sm-12 col-md-12 pt-14">
             <svg

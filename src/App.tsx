@@ -13,11 +13,13 @@ import Store from "./page/Store/Store";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
-        <Route index element={<Main />} />
-        <Route path="store" element={<Store />} />
+      <>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Main />} />
+          <Route path="store" element={<Store />} />
+        </Route>
         <Route path="*" element={<Page404 />} />
-      </Route>
+      </>
     )
   );
 

@@ -410,5 +410,19 @@
         }
       ]
     }
+  ],
+  "content-wrapper": [
+    {
+      "id": 1,
+      "href": "/",
+      "title": "Nhận 1.000.000đ–19.100.000đ dưới hình thức điểm tín dụng để mua iPhone 14 hoặc iPhone 14 Pro khi bạn trao đổi iPhone 7 trở lên.",
+      "subTitle": "Mua iPhone"
+    },
+    {
+      "id": 2,
+      "href": "/cart",
+      "title": "Thanh toán với lãi suất thấp, thời hạn lên đến 24 tháng và chỉ cần trả trước 20% khi bạn chọn Trả Góp Hàng Tháng với MoMo.",
+      "subTitle": "Tìm hiểu thêm"
+    }
   ]
 }
