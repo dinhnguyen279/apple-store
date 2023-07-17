@@ -72,7 +72,10 @@ const Header: React.FC = () => {
       <div
         className={`text-zinc-300 py-2 text-xs fixed top-0 w-full z-50 outline-none border-none h-12
         ${
-          showItem.length || search.length || cartNavbar.length > 0
+          show === false ||
+          showItem.length ||
+          search.length ||
+          cartNavbar.length > 0
             ? "bg-black"
             : "bg-[#434344]"
         }
