@@ -44,7 +44,8 @@ const ProductsChild = () => {
             {dataProducts1.map((val, idx) => {
               return (
                 <div
-                  className="hover:scale-95 transition-transform"
+                  // className="hover:scale-95 transition-transform"
+                  className="cursor-pointer"
                   key={idx + 1}
                 >
                   <div className="relative">
@@ -78,7 +79,8 @@ const ProductsChild = () => {
             {dataProducts2.map((val, idx) => {
               return (
                 <div
-                  className="cursor-pointer hover:scale-95 transition-transform"
+                  // className="cursor-pointer hover:scale-95 transition-transform"
+                  className="cursor-pointer"
                   key={idx + 1}
                 >
                   <div className="relative">

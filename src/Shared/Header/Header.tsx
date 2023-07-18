@@ -260,7 +260,7 @@ const Header: React.FC = () => {
               ? "translate-y-0 opacity-100"
               : "-translate-y-[100vh] opacity-0"
           }
-           bg-black max-h-max w-[100%] transition-all ease-in-out duration-500 py-6 lg:block hidden mt-2 absolute top-[100%] left-0
+           bg-black max-h-max w-[100%] transition-all ease-in-out duration-500 py-6 lg:block hidden mt-2 absolute top-[100%] left-0 
           `}
             onMouseLeave={() => setShowItem("")}
           >
