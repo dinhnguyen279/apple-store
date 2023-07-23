@@ -1,12 +1,18 @@
 body {
   background-color: white;
+  font-family: "SFProText" !important ;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url(./font/FontsFree-Net-SFProText-Regular.ttf) format("truetype");
 }
 
 .transform-default {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 50vw;
 }
+
 @media only screen and (max-width: 1400px) {
   .transform-default {
     max-width: 70vw;
