@@ -81,13 +81,13 @@ const Header: React.FC = () => {
         }
       `}
       >
-        <div className="flex lg:justify-center justify-between items-center gap-10 px-4 nav-main relative">
+        <div className="flex lg:justify-center justify-between items-center gap-x-10 px-4 nav-main relative h-full">
           <div className="flex items-center gap-x-10">
             <a href="/">
               <img src={data.logo} alt="logo" className="h-6 w-6" />
             </a>
             <ul
-              className="flex justify-evenly items-center gap-16 w-full lg:h-full h-[100vh]"
+              className="flex justify-evenly items-center gap-x-16 w-full lg:h-full h-[100vh]"
               ref={navRef}
             >
               {data.categories !== undefined &&
@@ -222,10 +222,10 @@ const Header: React.FC = () => {
             <div className="flex justify-between container mx-auto xl:px-80 px-14 flex-grow">
               <div>
                 <p className="text-2xl font-semibold">Giỏ Hàng</p>
-                <div className="py-2 flex items-center gap-x-5">
+                <a href={"/product"} className="py-2 flex items-center gap-x-5">
                   <img src={iphone14} alt="iPhone14" />
                   <strong>iPhone 14 Pro Max 1TB Tím</strong>
-                </div>
+                </a>
                 <div className="py-2">
                   <p className="text-sm text-gray-400">Hồ Sơ Của Tôi</p>
                   <ul className="space-y-2 py-2">
@@ -246,7 +246,7 @@ const Header: React.FC = () => {
               </div>
               <div>
                 <button className="bg-[#0572e4] hover:bg-[#0578e4] py-2 px-4 rounded-full text-lg text-white font-normal outline-none border-none">
-                  Xem Giỏ Hàng
+                  <a href="cart">Xem Giỏ Hàng</a>
                 </button>
               </div>
             </div>

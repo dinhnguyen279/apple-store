@@ -11,7 +11,6 @@ const ProductsChild = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // if (!isVisible) {
       const component = document.getElementById("animatedComponent");
       if (component) {
         const componentTop = component.getBoundingClientRect().top;
@@ -20,7 +19,6 @@ const ProductsChild = () => {
           setIsVisible(true);
         }
       }
-      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,11 +41,7 @@ const ProductsChild = () => {
           <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4 animate__animated animate__bounceInUp">
             {dataProducts1.map((val, idx) => {
               return (
-                <div
-                  // className="hover:scale-95 transition-transform"
-                  className="cursor-pointer"
-                  key={idx + 1}
-                >
+                <a href="/product" className="cursor-pointer" key={idx + 1}>
                   <div className="relative">
                     <div className="absolute top-[1%] left-[50%] -translate-x-[50%] text-center text-black">
                       <h1 className="lg:text-6xl text-lg font-semibold">
@@ -58,7 +52,7 @@ const ProductsChild = () => {
                         {val.content}
                       </p>
                       <div className="space-x-10 text-blue-600 text-xl font-normal hidden lg:block">
-                        <a href="/" className="hover:underline">
+                        <a href="/product" className="hover:underline">
                           {val.urlBuy} {""} {val.urlmore}
                         </a>
                       </div>
@@ -71,7 +65,7 @@ const ProductsChild = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
@@ -118,7 +112,7 @@ const ProductsChild = () => {
 
 export default ProductsChild;
 
-const dataProducts1 = [
+export const dataProducts1 = [
   {
     id: 1,
     images: WatchBlack,
