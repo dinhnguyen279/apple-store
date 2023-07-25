@@ -14,6 +14,9 @@ import spaceblack from "../../assets/images/spaceblack.png";
 import gold from "../../assets/images/gold.png";
 import silver from "../../assets/images/silver.png";
 import deeppurple from "../../assets/images/deeppurple.png";
+// Trong hộp có gì?
+import iphone14tronghop from "../../assets/images/iphone14tronghop.png";
+import congsaclight from "../../assets/images/congsaclight.png";
 export const dataImgProduct = [
   {
     id: 1,
@@ -115,6 +118,11 @@ const Detail = () => {
   const [textRadio, setTextRadio] = useState<string>("");
   const [chooseIphone, setChooseIphone] = useState<boolean>(false);
   const [reNew, setReNew] = useState<boolean>(false);
+  const [showListItem, setShowListItem] = useState<boolean>(true);
+  const [showItemFirst, setShowItemFirst] = useState<boolean>(false);
+  const [showItemSecond, setShowItemSecond] = useState<boolean>(false);
+  const [showItemThird, setShowItemThird] = useState<boolean>(false);
+  const [showItemTheEnd, setShowItemTheEnd] = useState<boolean>(false);
   const length = dataImgProduct.length;
 
   useEffect(() => {
@@ -148,6 +156,8 @@ const Detail = () => {
   const handleSelectStorageProduct = (idStorageProduct: number) => {
     console.log("idStorageProduct", idStorageProduct);
   };
+
+  // const handleShowItems = () => {};
 
   return (
     <div className="mt-12">
@@ -217,7 +227,7 @@ const Detail = () => {
                 </div>
                 {/* Show Product Mobile */}
                 <div className="md:hidden block">
-                  <div className="overflow-x-auto scroller-product">
+                  <div className="overflow-x-auto scroller-none">
                     <div className="flex flex-nowrap w-full">
                       {dataImgProduct.map((val, idx) => {
                         return (
@@ -604,13 +614,17 @@ const Detail = () => {
           </div>
           {/* chooseIphone */}
           <div
-            className={`relative grid md:grid-cols-4 grid-cols-1 trade-in-under transition-all duration-300 ease-in-out delay-300
-            ${chooseIphone ? "h-full opacity-100" : "h-0 opacity-0"}
+            className={`relative grid md:grid-cols-4 grid-cols-1 trade-in-under transition-all duration-1000 ease-in-out
+            ${
+              chooseIphone
+                ? "h-full opacity-100"
+                : "h-0 opacity-0 top-0 left-0 -z-50"
+            }
             `}
           >
-            <div
-              className={`absolute bottom-0 left-0 w-full bg-white transition-all duration-300 ease-in-out delay-300
-              ${chooseIphone ? "h-0 opacity-0" : "h-full opacity-100"}
+            <hr
+              className={`absolute bottom-0 left-0 w-full bg-white transition-all duration-1000 ease-in-out
+              ${chooseIphone ? "h-0 border-transparent" : "h-full"}
               `}
             />
             <div className="trade-in-header col-span-3">
@@ -652,7 +666,7 @@ const Detail = () => {
           {/* Goi Bao Hanh */}
           <div
             className={`grid md:grid-cols-4 grid-cols-1 trade-in transition-all duration-300 ease-in-out
-            ${reNew ? "h-full opacity-100" : "h-0 opacity-0"}
+            ${reNew ? "h-full block" : "h-0 hidden"}
             `}
           >
             <div className="w-full text-2xl font-semibold col-span-3 trade-in-header">
@@ -765,7 +779,363 @@ const Detail = () => {
             </div>
           </div>
         </section>
+
+        <section>
+          <div className="text-center pt-16 pb-10 z-50">
+            <h2>
+              <span className="font-semibold text-4xl">Trong hộp có gì</span>
+            </h2>
+          </div>
+          <div className="wrapper-content scroller-none">
+            <div className="flex flex-nowrap w-full">
+              <ul className="flex flex-wrap justify-center items-center w-full wrapper-list">
+                <li className="text-center grow wrapper-item">
+                  <div className="pl-60 text-center">
+                    <img
+                      src={iphone14tronghop}
+                      className="h-[339px] w-auto object-cover mx-auto"
+                      alt="iphone14tronghop"
+                    />
+                  </div>
+                  <p className="pl-64 px-4 pt-6">iPhone 14 Pro Max</p>
+                </li>
+                <li className="text-center grow wrapper-item">
+                  <div className="pr-60 text-center">
+                    <img
+                      src={congsaclight}
+                      className="h-[339px] w-auto object-cover mx-auto"
+                      alt="congsaclight"
+                    />
+                  </div>
+                  <p className="pr-60 px-4 pt-6">Cáp USB-C sang Lightning</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full text-[#6e6e73] text-base font-light text-center mt-4 pt-10 space-y-4">
+            <p className="font-semibold">
+              <strong>Các mục tiêu về môi trường của chúng tôi.</strong>
+            </p>
+            <p>
+              Là một phần trong nỗ lực của chúng tôi nhằm đạt được{" "}
+              <a href="/" className="text-[#06c]">
+                trạng thái trung hòa carbon vào năm 2030
+              </a>
+              , iPhone 14 Pro và iPhone 14 Pro Max không đi kèm bộ tiếp hợp
+              nguồn hoặc EarPods. Trong hộp có cáp chuyển đổi từ USB-C sang
+              Lightning hỗ trợ sạc nhanh và tương thích với bộ tiếp hợp nguồn
+              USB‑C cũng như cổng máy tính.
+            </p>
+            <p>
+              Chúng tôi khuyến khích bạn sử dụng lại cáp chuyển từ USB‑A sang
+              Lightning, bộ tiếp hợp nguồn và tai nghe hiện tại của bạn tương
+              thích với các phiên bản iPhone này. Nhưng nếu cần bất kỳ bộ tiếp
+              hợp nguồn hoặc tai nghe mới nào của Apple, bạn đều có thể mua.
+            </p>
+          </div>
+        </section>
       </div>
+
+      <hr className="my-10 border-[1px] border-[#d2d2d7]" />
+
+      <section className="transform-default">
+        <h2 className="text-3xl font-semibold">
+          <button
+            onClick={() => setShowListItem(!showListItem)}
+            className="flex justify-between items-center py-8 w-full"
+          >
+            <span>Câu Hỏi Thường Gặp</span>
+            <span
+              className={`${
+                showListItem ? "icon-rotate" : ""
+              }  w-8 flex justify-center m-0 text-[#86868b]`}
+            >
+              <svg
+                className="transition-all duration-300 ease-linear"
+                viewBox="0 0 17 8.85"
+                role="img"
+                aria-hidden="true"
+                width="35px"
+                height="35px"
+              >
+                <path fill="none" d="M0 0h35v35H0z"></path>
+                <path
+                  fill="none"
+                  stroke="#86868b"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.25"
+                  d="M15 1.13L8.5 7.72 2 1.13"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </h2>
+        <div
+          className={`
+          ${
+            showListItem
+              ? "h-full opacity-100 translate-y-0"
+              : "translate-y-3 h-0 opacity-0 absolute left-0 bottom-0 -z-10"
+          }
+          transition-all ease-in-out duration-500
+          `}
+        >
+          <ul className="text-sm">
+            <li className="border-t-[1px] border-[#d2d2d7]">
+              <h3 className="font-semibold hover:text-[#06c]">
+                <button
+                  onClick={() => setShowItemFirst(!showItemFirst)}
+                  className="flex justify-between w-full py-6"
+                >
+                  <span className="">
+                    Tại sao tôi nên mua iPhone không có SIM trên apple.com?
+                  </span>
+                  <span
+                    className={`${
+                      showItemFirst ? "icon-rotate" : ""
+                    }  w-8 flex justify-center m-0 text-[#86868b]`}
+                  >
+                    <svg
+                      className="transition-all duration-300 ease-linear"
+                      viewBox="0 0 17 8.85"
+                      role="img"
+                      aria-hidden="true"
+                      width="17px"
+                      height="17px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path
+                        fill="none"
+                        stroke="#86868b"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.25"
+                        d="M15 1.13L8.5 7.72 2 1.13"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div
+                className={`transition-all ease-in-out duration-500
+                   ${
+                     showItemFirst
+                       ? "h-full opacity-100 translate-y-0 pb-6"
+                       : "translate-y-3 h-0 opacity-0 relative top-0 left-0 -z-50"
+                   }
+                 `}
+              >
+                Tại sao tôi nên mua iPhone không có SIM trên apple.com? Một
+                iPhone chưa kết nối được mua từ apple.com sẽ được mở khóa. Điều
+                này có nghĩa là bạn sẽ không bị ràng buộc với một nhà cung cấp
+                mạng hoặc một hợp đồng dịch vụ nhiều năm nào. Bạn có thể chọn
+                mạng và giá cước phù hợp với mình. Sau khi được kích hoạt,
+                iPhone mới của bạn vẫn được mở khóa, có nghĩa là bạn có thể sử
+                dụng thiết bị này với bất kỳ nhà mạng nào cung cấp dịch vụ cho
+                iPhone.
+              </div>
+            </li>
+
+            <li className="border-t-[1px] border-[#d2d2d7]">
+              <h3 className="font-semibold hover:text-[#06c]">
+                <button
+                  onClick={() => setShowItemSecond(!showItemSecond)}
+                  className="flex justify-between w-full py-6"
+                >
+                  <span>
+                    Việc chuyển dữ liệu và thiết lập iPhone mới có dễ không?
+                  </span>
+                  <span
+                    className={`${
+                      showItemSecond ? "icon-rotate" : ""
+                    }  w-8 flex justify-center m-0 text-[#86868b]`}
+                  >
+                    <svg
+                      className="transition-all duration-300 ease-linear"
+                      viewBox="0 0 17 8.85"
+                      role="img"
+                      aria-hidden="true"
+                      width="17px"
+                      height="17px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path
+                        fill="none"
+                        stroke="#86868b"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.25"
+                        d="M15 1.13L8.5 7.72 2 1.13"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div
+                className={`transition-all ease-in-out duration-500
+                   ${
+                     showItemSecond
+                       ? "h-full opacity-100 translate-y-0 pb-6 space-y-4"
+                       : "translate-y-1 h-0 opacity-0 relative top-0 left-0 -z-50"
+                   }
+                 `}
+              >
+                <p>
+                  Có, iCloud giúp di chuyển cài đặt, ảnh, ứng dụng và tài liệu
+                  của bạn sang thiết bị mới một cách mượt mà. Chỉ cần đăng nhập
+                  vào iCloud khi bạn thiết lập thiết bị mới, truy cập vào bản
+                  sao lưu iCloud trên thiết bị trước đó và tất cả sẽ sẵn sàng
+                  chỉ sau vài phút.
+                </p>
+                <p>
+                  Bạn không có đủ dung lượng iCloud để hoàn tất quá trình sao
+                  lưu? iCloud sẽ cấp cho bạn đủ dung lượng tạm thời để đảm bảo
+                  bạn có thể sao lưu thiết bị và truyền tất cả dữ liệu, miễn phí
+                  (cần sử dụng iOS 15).
+                </p>
+                <p>
+                  Với tính năng Bắt Đầu Nhanh, bạn có thể khôi phục dữ liệu và
+                  nội dung từ bản sao lưu iCloud sang iPhone mới. Đối với điện
+                  thoại sử dụng iOS 12.4 trở lên, tính năng Bắt Đầu Nhanh có tùy
+                  chọn sử dụng chế độ di chuyển từ thiết bị này sang thiết bị
+                  khác, cho phép bạn truyền tất cả dữ liệu của mình từ thiết bị
+                  hiện tại sang thiết bị mới thông qua mạng không dây.
+                </p>
+                <p>
+                  Nếu bạn đang chuyển từ Android, trước tiên bạn cần tải xuống
+                  ứng dụng Chuyển sang iOS và làm theo quy trình thiết lập trên
+                  iPhone mới.
+                </p>
+                <p>
+                  Để tìm hiểu cách truyền dữ liệu sang iPhone mới, hãy truy cập{" "}
+                  <a
+                    href="support.apple.com/vi-vn/HT201269"
+                    className="text-[#06c]"
+                  >
+                    support.apple.com/vi-vn/HT201269.
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li className="border-t-[1px] border-[#d2d2d7]">
+              <h3 className="font-semibold hover:text-[#06c]">
+                <button
+                  onClick={() => setShowItemThird(!showItemThird)}
+                  className="flex justify-between w-full py-6"
+                >
+                  <span>
+                    iPhone của tôi có hoạt động trên toàn thế giới không?
+                  </span>
+                  <span
+                    className={`${
+                      showItemThird ? "icon-rotate" : ""
+                    }  w-8 flex justify-center m-0 text-[#86868b]`}
+                  >
+                    <svg
+                      className="transition-all duration-300 ease-linear"
+                      viewBox="0 0 17 8.85"
+                      role="img"
+                      aria-hidden="true"
+                      width="17px"
+                      height="17px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path
+                        fill="none"
+                        stroke="#86868b"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.25"
+                        d="M15 1.13L8.5 7.72 2 1.13"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div
+                className={`transition-all ease-in-out duration-500
+                   ${
+                     showItemThird
+                       ? "h-full opacity-100 translate-y-0 pb-6"
+                       : "translate-y-1 h-0 opacity-0 relative top-0 left-0 -z-50"
+                   }
+                 `}
+              >
+                Các phiên bản iPhone hiện được bán trên apple.com có thể kết nối
+                với mạng tương thích trên thế giới, bao gồm mạng 5G và 4G LTE.
+                Hãy kiểm tra với nhà cung cấp mạng gia đình của bạn về phí
+                chuyển vùng quốc tế, hoặc mua SIM nano tương thích ở nơi bạn
+                sinh sống.
+              </div>
+            </li>
+
+            <li className="border-t-[1px] border-[#d2d2d7]">
+              <h3 className="font-semibold hover:text-[#06c]">
+                <button
+                  onClick={() => setShowItemTheEnd(!showItemTheEnd)}
+                  className="flex justify-between w-full py-6"
+                >
+                  <span>
+                    Tôi có thể chọn phương thức giao hàng nào và khi nào tôi sẽ
+                    nhận được hàng?
+                  </span>
+                  <span
+                    className={`${
+                      showItemTheEnd ? "icon-rotate" : ""
+                    }  w-8 flex justify-center m-0 text-[#86868b]`}
+                  >
+                    <svg
+                      className="transition-all duration-300 ease-linear"
+                      viewBox="0 0 17 8.85"
+                      role="img"
+                      aria-hidden="true"
+                      width="17px"
+                      height="17px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path
+                        fill="none"
+                        stroke="#86868b"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.25"
+                        d="M15 1.13L8.5 7.72 2 1.13"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div
+                className={`transition-all ease-in-out duration-500
+                   ${
+                     showItemTheEnd
+                       ? "h-full opacity-100 translate-y-0 pb-6 space-y-4"
+                       : "translate-y-1 h-0 opacity-0 relative top-0 left-0 -z-50"
+                   }
+                 `}
+              >
+                <p>
+                  Thời gian giao hàng ước tính tùy thuộc vào tình trạng sẵn có
+                  của sản phẩm và phương thức giao hàng bạn chọn. Bạn sẽ được
+                  biết ngày giao hàng chính xác sau khi đặt hàng.
+                </p>
+                <p>
+                  Phương thức giao hàng tiêu chuẩn được miễn phí cho tất cả đơn
+                  hàng trực tuyến.
+                </p>
+                <p>
+                  Đơn hàng đặt qua <a href="apple.com">apple.com</a> chỉ có thể
+                  được vận chuyển trong quốc gia hoặc khu vực mua. Truy cập cửa
+                  hàng trực tuyến của địa điểm mà bạn muốn sản phẩm được giao
+                  đến.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
