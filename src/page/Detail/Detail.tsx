@@ -174,7 +174,7 @@ const Detail = () => {
           </a>
         </div>
       </div>
-      <section className="container-detailcontainer-detail">
+      <section className="container-detail">
         <div className="pt-14 pb-6 flex flex-wrap items-start justify-between">
           <div>
             <div>
@@ -228,25 +228,24 @@ const Detail = () => {
                 })}
               </div>
               {/* Show Product Mobile */}
-              <div className="md:hidden block">
-                <div className="overflow-x-auto scroller-none">
-                  <div className="flex flex-nowrap w-full">
-                    {dataImgProduct.map((val, idx) => {
-                      return (
-                        <div className="scroll-product-mobile" key={idx + 1}>
-                          <div className="scroll-product-mobile-item">
-                            <div className="h-[246px]">
-                              <img
-                                src={val.img}
-                                alt={val.name}
-                                className="object-cover w-full h-full"
-                              />
-                            </div>
-                          </div>
+              <div className="md:hidden block space-y-10">
+                <div className="flex flex-nowrap snap-x snap-mandatory overflow-scroll w-[90vw] mx-auto scroller-none">
+                  {dataImgProduct.map((val, idx) => {
+                    return (
+                      <div
+                        className="snap-center flex-shrink-0 flex justify-center items-center h-full w-full bg-[#fbfbfb]"
+                        key={idx + 1}
+                      >
+                        <div className="h-[246px] rounded-3xl overflow-hidden">
+                          <img
+                            src={val.img}
+                            alt={val.name}
+                            className="object-cover w-full h-full"
+                          />
                         </div>
-                      );
-                    })}
-                  </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="md:block hidden">
@@ -831,7 +830,7 @@ const Detail = () => {
               </div>
               <div className="md:hidden block">
                 <div className="py-6">
-                  <button className="bg-[#0071e3] py-3 px-6 text-slate-100 w-full rounded-lg">
+                  <button className="bg-[#0071e3] hover:bg-[#0071e3e1] py-3 px-6 text-white w-full rounded-lg">
                     Thêm vào giỏ hàng
                   </button>
                 </div>
@@ -861,7 +860,6 @@ const Detail = () => {
                 </div>
               </div>
             </div>
-
             <div className="pt-5 pb-10 text-sm space-y-1 border-b-[1px] border-[#d2d2d7]">
               <h2 className="font-semibold">Vẫn chưa thể quyết định?</h2>
               <p>
@@ -909,7 +907,7 @@ const Detail = () => {
               </div>
             </div>
             <div className="pt-6">
-              <button className="bg-[#0071e3] py-3 px-6 text-slate-100 w-full rounded-lg">
+              <button className="bg-[#0071e3] hover:bg-[#0071e3e1] py-3 px-6 text-white w-full rounded-lg">
                 Thêm vào giỏ hàng
               </button>
             </div>

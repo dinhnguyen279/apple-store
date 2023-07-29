@@ -146,12 +146,6 @@
     margin: 0 auto;
   }
 
-  .scroll-product-mobile {
-    white-space: normal;
-    scroll-snap-align: center;
-    margin: 0 auto;
-  }
-
   .wrapper-content {
     overflow-x: auto;
   }
@@ -189,20 +183,6 @@
 
   .scroller-none::-webkit-scrollbar {
     display: none;
-  }
-
-  .scroll-product-mobile-item {
-    background: #fbfbfb;
-    width: 90vw;
-    min-height: 246px;
-    max-width: 90vw;
-    overflow: hidden;
-    border-radius: 20px;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3 ease-in-out;
   }
 
   .column-right-first {
