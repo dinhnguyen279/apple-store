@@ -279,9 +279,11 @@ const Cart = () => {
               <p className="font-light pb-7 md:text-end text-start">
                 Bao gồm thuế GTGT 8.227.090đ
               </p>
-              <button className="md:w-1/2 w-full text-lg py-4 px-7 bg-[#0077ed] hover:bg-[#0076ede3] text-white rounded-xl">
-                Thanh toán
-              </button>
+              <div className="w-full md:text-right text-center">
+                <button className="md:w-1/2 w-full text-lg py-4 px-7 bg-[#0077ed] hover:bg-[#0076ede3] text-white rounded-xl">
+                  Thanh toán
+                </button>
+              </div>
             </div>
           </div>
         </div>
