@@ -10,6 +10,7 @@ import RootLayout from "./layouts/RootLayout";
 import Page404 from "./page/NotFound/page404";
 import Store from "./page/Store/Store";
 import Detail from "./page/Detail/Detail";
+import Cart from "./page/Cart/Cart";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Main />} />
           <Route path="store" element={<Store />} />
           <Route path="product" element={<Detail />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </>

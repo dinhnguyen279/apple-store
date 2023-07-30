@@ -1,0 +1,39 @@
+.color-item {
+  display: flex;
+  align-items: center;
+  transition: all 0.3 linear;
+}
+
+.color-item input {
+  display: none;
+  appearance: none;
+}
+
+.color-item_label {
+  border-radius: 100%;
+  padding: 3px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3 ease-in-out;
+}
+
+.color-item_label img {
+  background: #f5f5f7 50%;
+}
+
+.color-item input:checked + .color-item_label {
+  border: 2px solid #0071e3;
+}
+
+.icon-rotate svg {
+  transform: scaleY(-1);
+  filter: FlipH;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -ms-filter: "FlipH";
+}
+
+.icon-rotate-x {
+  transform: rotate(45deg);
+}
