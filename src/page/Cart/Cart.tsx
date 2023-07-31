@@ -9,7 +9,6 @@ import silver from "../../assets/images/silver.png";
 import deeppurple from "../../assets/images/deeppurple.png";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "./Cart.css";
 const Cart = () => {
   const [showListItem, setShowListItem] = useState<boolean>(true);
@@ -37,7 +36,7 @@ const Cart = () => {
             <div className="mt-8 flex justify-center">
               <div className="md:w-[290px] w-full">
                 <button className="bg-[#0071e3] hover:bg-[#0076ede3] text-white py-2 px-4 rounded-xl w-full">
-                  Thanh Toán
+                  <a href="/checkout">Thanh toán</a>
                 </button>
               </div>
             </div>
@@ -281,7 +280,7 @@ const Cart = () => {
               </p>
               <div className="w-full md:text-right text-center">
                 <button className="md:w-1/2 w-full text-lg py-4 px-7 bg-[#0077ed] hover:bg-[#0076ede3] text-white rounded-xl">
-                  Thanh toán
+                  <a href="/checkout">Thanh toán</a>
                 </button>
               </div>
             </div>

@@ -126,8 +126,8 @@ const Header: React.FC = () => {
             </button>
             <div className="relative">
               <button
-                className=" quantity-cart"
-                data-order={"1"}
+                className="quantity-cart"
+                data-order={"2"}
                 onClick={() => {
                   setCartNavbar("Cart");
                   setSearch("");

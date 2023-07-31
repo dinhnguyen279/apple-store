@@ -1,0 +1,23 @@
+.form-input:not(:placeholder-shown) + .form-lable,
+.form-input:focus + .form-lable {
+  top: 25%;
+  font-size: 14px;
+}
+
+.icon-rotate svg {
+  transform: scaleY(-1);
+  filter: FlipH;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -ms-filter: "FlipH";
+}
+
+.icon-rotate-x {
+  transform: rotate(45deg);
+}
+
+.input-radio:checked + .input-label {
+  border-width: 2px;
+  border-color: #0071e3;
+}

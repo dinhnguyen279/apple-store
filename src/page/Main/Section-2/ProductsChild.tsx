@@ -72,8 +72,9 @@ const ProductsChild = () => {
           <div className="grid grid-col-1 md:grid-cols-2 p-0 md:px-5 gap-4 animate__animated animate__bounceInUp">
             {dataProducts2.map((val, idx) => {
               return (
-                <div
+                <a
                   // className="cursor-pointer hover:scale-95 transition-transform"
+                  href="/product"
                   className="cursor-pointer"
                   key={idx + 1}
                 >
@@ -87,7 +88,7 @@ const ProductsChild = () => {
                         {val.content}
                       </p>
                       <div className="space-x-10 text-blue-600 text-xl font-normal hidden lg:block">
-                        <a href="/" className="hover:underline">
+                        <a href="/product" className="hover:underline">
                           {val.urlBuy} {""} {val.urlmore}
                         </a>
                       </div>
@@ -100,7 +101,7 @@ const ProductsChild = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
