@@ -1,0 +1,15 @@
+.size-dataContact {
+  width: calc(100% / 7);
+}
+
+.form-input:not(:placeholder-shown) + .form-lable,
+.form-input:focus + .form-lable {
+  top: 25%;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .size-dataContact {
+    width: calc(100% / 2);
+  }
+}

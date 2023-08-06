@@ -18,7 +18,6 @@ import deeppurple from "../../assets/images/deeppurple.png";
 import iphone14tronghop from "../../assets/images/iphone14tronghop.png";
 import congsaclight from "../../assets/images/congsaclight.png";
 import buyIphone14 from "../../assets/images/Buy-iPhone144.png";
-import { redirect } from "react-router-dom";
 
 export const dataImgProduct = [
   {
@@ -833,7 +832,10 @@ const Detail = () => {
               </div>
               <div className="md:hidden block">
                 <div className="py-6">
-                  <button className="bg-[#0071e3] hover:bg-[#0071e3e1] py-3 px-6 text-white w-full rounded-lg">
+                  <button
+                    onClick={() => AddToCart()}
+                    className="bg-[#0071e3] hover:bg-[#0071e3e1] py-3 px-6 text-white w-full rounded-lg"
+                  >
                     Thêm vào giỏ hàng
                   </button>
                 </div>

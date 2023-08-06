@@ -7,7 +7,9 @@ interface ListItemProps {
 const ItemCategories: React.FC<ListItemProps> = ({ itemName }) => {
   return (
     <>
-      <li className="cursor-pointer">{itemName}</li>
+      <li className="cursor-pointer">
+        <a href="/store">{itemName}</a>
+      </li>
     </>
   );
 };

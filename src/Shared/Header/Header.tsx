@@ -93,7 +93,7 @@ const Header: React.FC = () => {
               {data.categories !== undefined &&
                 data.categories.map((val, idx) => {
                   return (
-                    <a href="/store" className="w-full">
+                    <a href={val.href} className="w-full">
                       <li
                         key={idx + 1}
                         className={`cursor-pointer flex justify-between`}

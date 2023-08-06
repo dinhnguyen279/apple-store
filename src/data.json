@@ -50,7 +50,8 @@
           "itemTitle": "Mua Tại Cửa Hàng Đặt Biệt",
           "itemName": "Doanh Nghiệp"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 2,
@@ -104,7 +105,8 @@
           "itemTitle": "Mua Mac",
           "itemName": "Doanh Nghiệp"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 3,
@@ -162,7 +164,8 @@
           "itemTitle": "Tìm Hiểu Thêm Về iPad",
           "itemName": "iCloud"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 4,
@@ -216,7 +219,8 @@
           "itemTitle": "Mua iPhone",
           "itemName": "Ví"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 5,
@@ -266,7 +270,8 @@
           "itemTitle": "Tìm Hiểu Thêm về Watch",
           "itemName": "WatchOS 9"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 6,
@@ -304,7 +309,8 @@
           "itemTitle": "Tìm Hiểu Thêm về AirPods",
           "itemName": "Apple Music"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 7,
@@ -338,7 +344,8 @@
           "itemTitle": "Khám Phá Phụ Kiện",
           "itemName": "Phụ Kiện AirPods"
         }
-      ]
+      ],
+      "href": "/store"
     },
     {
       "id": 8,
@@ -408,7 +415,8 @@
           "itemTitle": "Chủ Đề Hữu Ích",
           "itemName": "Trợ Năng"
         }
-      ]
+      ],
+      "href": "/contact"
     }
   ],
   "content-wrapper": [

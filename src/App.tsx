@@ -12,6 +12,7 @@ import Store from "./page/Store/Store";
 import Detail from "./page/Detail/Detail";
 import Cart from "./page/Cart/Cart";
 import Checkout from "./page/Checkout/Checkout";
+import Contact from "./page/Contact/Contact";
 
 function App() {
   const router = createBrowserRouter(
@@ -23,6 +24,7 @@ function App() {
           <Route path="product" element={<Detail />} />
           <Route path="cart" element={<Cart />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </>
